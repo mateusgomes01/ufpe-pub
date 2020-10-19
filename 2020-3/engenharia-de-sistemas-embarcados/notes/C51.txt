@@ -1,0 +1,45 @@
+C51
+
+12 pulsos de clock
+
+12MHz de Xtal / 12 pulsos para 1 instrução = 1 Mega de instruções por segundo
+
+Pesquisa: o que é um memory model no ambiente keil, o que é um code longside
+
+arquitetura von neuman/ priceton
+
+na memoria von newman a memória é compartilhada com dados e intruções
+
+RAM = Random Access Memory
+
+ROM = Read Only Memory
+
+A CPU pega os dados na ROM por meio do bootloader e BIOS para carregar a RAM
+
+Atividade: 
+
+Explicar opções do target1:
+
+Memory Model
+Code ROM size
+Operating Systems
+
+Debug: Limit speed in real time = é desativada para fazer simulações longas
+
+Watch Dog Timer = WDT = ultimo dispositivo de reação a falhas de um computador
+
+Hywre Cesar
+
+usar static para declarar valores iniciais
+
+psw = program status word
+
+ligar call stack window para ver variaveis locais como o contador:
+
+pode ser em hexa ou decimal
+
+command pode alterar variáveis em execução. Colocando o mouse em cima da variável é possível ver a localização e o valor
+
+calculo do clock:
+
+(Feq do clock / 12) / (65536 - valor do clock))

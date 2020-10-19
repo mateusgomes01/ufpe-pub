@@ -1,0 +1,173 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/19/2020  08:27:38  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\STARTUP.obj, .\Objects\projeto2_1.obj TO .\Objects\Projeto2_1 PRINT (.\Listings\Pr
+>> ojeto2_1.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\STARTUP.obj (?C_STARTUP)
+  .\Objects\projeto2_1.obj (PROJETO2_1)
+
+
+LINK MAP OF MODULE:  .\Objects\Projeto2_1 (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+                    0008H     0018H                  *** GAP ***
+            BIT     0020H.0   0000H.2   UNIT         _BIT_GROUP_
+                    0020H.2   0000H.6                *** GAP ***
+            IDATA   0021H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0098H     UNIT         ?PR?MAIN?PROJETO2_1
+            CODE    0898H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\Projeto2_1 (?C_STARTUP)
+
+
+SEGMENT                           BIT_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?PROJETO2_1
+
+?PR?MAIN?PROJETO2_1            0020H.0  0000H.2
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Projeto2_1 (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:0898H         SEGMENT       ?C_C51STARTUP
+  I:0021H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/19/2020  08:27:38  PAGE 2
+
+
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:089BH         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:0898H         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:0898H         LINE#         133
+  C:089AH         LINE#         134
+  C:089BH         LINE#         135
+  C:089CH         LINE#         136
+  C:089EH         LINE#         185
+  C:08A1H         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        PROJETO2_1
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  B:00A0H.0       PUBLIC        c1
+  B:00A0H.1       PUBLIC        c2
+  C:0800H         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  D:0001H         SYMBOL        state
+  D:0007H         SYMBOL        state2
+  D:0002H         SYMBOL        count
+  D:0082H         SYMBOL        count2
+  B:0020H.0       SYMBOL        flag
+  B:0020H.1       SYMBOL        flag2
+  -------         ENDDO         
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0802H         LINE#         10
+  C:0803H         LINE#         11
+  C:0805H         LINE#         12
+  C:0809H         LINE#         13
+  C:080BH         LINE#         14
+  C:080DH         LINE#         15
+  C:080FH         LINE#         17
+  C:080FH         LINE#         19
+  C:0816H         LINE#         20
+  C:0816H         LINE#         21
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/19/2020  08:27:38  PAGE 3
+
+
+  C:0819H         LINE#         22
+  C:081BH         LINE#         23
+  C:081BH         LINE#         24
+  C:0821H         LINE#         25
+  C:0823H         LINE#         26
+  C:082FH         LINE#         27
+  C:0830H         LINE#         28
+  C:0830H         LINE#         29
+  C:0832H         LINE#         31
+  C:0832H         LINE#         32
+  C:0844H         LINE#         33
+  C:0847H         LINE#         34
+  C:0849H         LINE#         35
+  C:084BH         LINE#         36
+  C:084BH         LINE#         37
+  C:084DH         LINE#         39
+  C:084DH         LINE#         40
+  C:084FH         LINE#         41
+  C:084FH         LINE#         42
+  C:084FH         LINE#         44
+  C:0856H         LINE#         45
+  C:0856H         LINE#         46
+  C:0859H         LINE#         47
+  C:085BH         LINE#         48
+  C:085BH         LINE#         49
+  C:0861H         LINE#         50
+  C:0863H         LINE#         51
+  C:086FH         LINE#         52
+  C:0870H         LINE#         53
+  C:0870H         LINE#         54
+  C:0872H         LINE#         56
+  C:0872H         LINE#         57
+  C:0887H         LINE#         58
+  C:088AH         LINE#         59
+  C:088CH         LINE#         60
+  C:0890H         LINE#         61
+  C:0890H         LINE#         62
+  C:0893H         LINE#         64
+  C:0893H         LINE#         65
+  C:0895H         LINE#         66
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PROJETO2_1
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00A7H BYTE ( 8%) *
+******************************************************************************
+
+Program Size: data=9.2 xdata=0 code=167
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

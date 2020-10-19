@@ -1,0 +1,4 @@
+".\Objects\Projeto1.obj" 
+TO ".\Objects\HEXFile" 
+PRINT(".\Listings\HEXFile.m51") RAMSIZE(256) 
+CODE( 0X0000-0X1FFF )
